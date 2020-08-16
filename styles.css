@@ -20,6 +20,13 @@ h1 {
   width: 30%;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: #000;
+}
+
 li {
   list-style: none;
 }
@@ -167,11 +174,6 @@ header {
   transition-duration: 0.8s;
 }
 
-.first-item h2 {
-  font-size: 40px;
-  color: #000;
-  font-weight: 900;
-}
 
 .first-item p {
   font-size: 1.25rem;
@@ -200,6 +202,11 @@ header {
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
+}
+
+.block-items > div:hover {
+  background: #4285f4;
+  color: white;
 }
 
 .block-items > div > div {
@@ -235,7 +242,81 @@ header {
   text-decoration: none;
 }
 
+.feedback-sec {
+  max-width: 960px;
+}
+
 .feedback-block {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.feedback-item {
+  flex: 1 1 40%;
+  opacity: 1;
+  transform: translate(0);
+  transition-duration: 0.8s;
+}
+
+.feedback-item img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+.feedback-item p {
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  opacity: 1;
+  transform: translate(0);
+  transition-duration: 0.8s;
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+
+.quote div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+.quote div img {
+  margin-right: 1rem;
+  max-width: 8%;
+  max-height: 8%;
+  border-radius: 50%;
+}
+
+.quote div strong {
+  font-weight: 700;
+  color: #000;
+}
+.quote div p {
+  padding-top: 10px;
+  position: absolute;
+  left: 12%;
+  color: #000;
+}
+
+.about-sec {
+
+
+}
+
+
+.about-land {
+
+  background: #f1f1f1;
+  padding: 2.5em 0;
+
 }
 
 .contact-sec {
