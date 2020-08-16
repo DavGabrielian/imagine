@@ -3,8 +3,8 @@
   margin-left: 15px;
   font-family: "Nunito", sans-serif;
 }
+
 body {
-  line-height: 1.7;
   color: gray;
 }
 
@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 30px;
@@ -31,6 +32,19 @@ li {
   list-style: none;
 }
 
+.btn {
+  font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border-width: 2px;
+    background: #4285f4;
+    border-color: #4285f4;
+    color: #fff;
+    position: relative;
+    top: 0;
+    transition: .3s all ease;
+    box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
 /* the navbar */
 
 header {
@@ -118,9 +132,15 @@ header {
 /* the navbar hell ends  */
 
 .landing-sec {
-  display: flex;
-  padding: 5rem;
+  position: relative;
+  padding: 10rem;
   max-width: 960px;
+  height: 200px;
+  margin-bottom: 25rem;
+}
+
+.landing-sec div {
+  position: absolute;
 }
 
 .landing-sec > div {
@@ -128,28 +148,18 @@ header {
   max-width: 70%;
 }
 
-.landing-sec div button {
-  border-width: 2px;
-  background: #4285f4;
-  border-color: #4285f4;
-  color: #fff;
-  position: relative;
-  font-size: 16px;
-  border-radius: 30px;
-  padding: 10px 30px;
+.landing-sec img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
+
 
 .landing-sec p {
   display: flex;
   font-size: 1rem;
   font-weight: 300;
-}
-
-.landing-sec img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 0;
 }
 
 .landing-sec h1 {
@@ -168,12 +178,11 @@ header {
 
 .first-item {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
 }
-
 
 .first-item p {
   font-size: 1.25rem;
@@ -266,7 +275,6 @@ header {
   height: auto;
 }
 
-
 .feedback-item p {
   margin-bottom: 1.5rem;
 }
@@ -307,17 +315,40 @@ header {
 }
 
 .about-sec {
-
-
 }
-
 
 .about-land {
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   background: #f1f1f1;
   padding: 2.5em 0;
-
 }
+
+.about-item {
+  display: flex;
+justify-content: space-between;
+}
+
+.about-land div div h3 {
+  color: #000;
+  font-size: 1.75rem;
+}
+
+.about-land div div ul {
+  margin-bottom: 3rem!;
+  padding-left: 0;
+    list-style: none;
+}
+
+.about-land div div ul > li {
+  position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
 
 .contact-sec {
   background-image: url("img/hero_1.jpg");
