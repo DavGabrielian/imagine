@@ -1,11 +1,13 @@
-* {
-  margin-right: 15px;
-  margin-left: 15px;
+html,
+body {
+  margin-right: 0;
+  margin-left: 0;
   font-family: "Nunito", sans-serif;
 }
 
 body {
   color: gray;
+  overflow-x: hidden;
 }
 
 section {
@@ -36,7 +38,7 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-.btn {
+.button {
   font-size: 16px;
   border-radius: 30px;
   padding: 10px 30px;
@@ -52,6 +54,7 @@ blockquote {
 /* the navbar */
 
 header {
+  left: 0;
   top: 0;
   position: fixed;
   width: 100%;
@@ -60,31 +63,31 @@ header {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
-  padding: 8px 12px;
+  padding: 0 10%;
   box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .name {
   color: #000;
+  padding: 7.5px 10px 7.5px 0;
 }
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
-  background-color: white;
-  width: 80%;
+  align-items: center;
 }
 
 .navbar-item {
+  position: relative;
+  width: auto;
   font-size: 16px;
-  display: flex;
   font-family: "Nunito", sans-serif;
   color: black;
-}
-
-.navbar-item:hover {
-  background-color: rgba(165, 165, 165, 0.5);
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .navbar ul {
@@ -106,7 +109,7 @@ header {
 }
 
 .navbar ul li:hover {
-  background-color: rgba(165, 165, 165, 0.5);
+  color: #4285f4;
 }
 
 .navbar ul ul {
@@ -121,6 +124,7 @@ header {
 
 .navbar ul li:hover > ul {
   display: block;
+  color: #4285f4;
 }
 
 .navbar ul ul li {
@@ -357,7 +361,6 @@ header {
   line-height: 1.5;
 }
 
-
 .team > p {
   text-align: center;
   font-size: 1.25rem;
@@ -428,7 +431,7 @@ header {
   font-size: 1rem;
 }
 
-.blog-contaioner {
+.blog-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -439,7 +442,6 @@ header {
   flex: 1 1 20%;
   padding: 0 1px 30px;
   width: 40%;
-
 }
 
 .blog-item > img {
