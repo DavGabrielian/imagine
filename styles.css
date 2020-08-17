@@ -357,8 +357,6 @@ header {
   line-height: 1.5;
 }
 
-.team {
-}
 
 .team > p {
   text-align: center;
@@ -441,6 +439,7 @@ header {
   flex: 1 1 20%;
   padding: 0 1px 30px;
   width: 40%;
+
 }
 
 .blog-item > img {
