@@ -39,9 +39,12 @@ blockquote {
 }
 
 .button {
+  cursor: pointer;
+  outline: none;
   font-size: 16px;
   border-radius: 30px;
   padding: 10px 30px;
+  margin-top: 3%;
   border-width: 2px;
   background: #4285f4;
   border-color: #4285f4;
@@ -144,22 +147,23 @@ header {
   padding: 10rem;
   max-width: 960px;
   height: 200px;
-  margin-bottom: 25rem;
+  margin-bottom: 20rem;
 }
 
 .landing-sec div {
   position: absolute;
-}
+  width: 100%;
+  }
 
 .landing-sec > div {
-  flex: 1;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .landing-sec img {
+  max-width: 100%;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -19%;
 }
 
 .landing-sec p {
@@ -169,6 +173,7 @@ header {
 }
 
 .landing-sec h1 {
+  width: 50%;
   font-size: 3.5rem;
   font-weight: 900;
   color: #000;
