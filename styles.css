@@ -32,18 +32,22 @@ li {
   list-style: none;
 }
 
+blockquote {
+  margin: 0 0 1rem;
+}
+
 .btn {
   font-size: 16px;
-    border-radius: 30px;
-    padding: 10px 30px;
-    border-width: 2px;
-    background: #4285f4;
-    border-color: #4285f4;
-    color: #fff;
-    position: relative;
-    top: 0;
-    transition: .3s all ease;
-    box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  border-radius: 30px;
+  padding: 10px 30px;
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  position: relative;
+  top: 0;
+  transition: 0.3s all ease;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
 }
 /* the navbar */
 
@@ -153,8 +157,6 @@ header {
   top: 0;
   right: 0;
 }
-
-
 
 .landing-sec p {
   display: flex;
@@ -314,20 +316,27 @@ header {
   color: #000;
 }
 
-.about-sec {
-}
-
 .about-land {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   background: #f1f1f1;
   padding: 2.5em 0;
+  width: 100%;
 }
 
 .about-item {
-  display: flex;
-justify-content: space-between;
+  max-width: 50%;
+  flex: 1 0 0;
+}
+
+.about-img {
+  flex: 2 0 0;
+}
+
+.about-img img {
+  max-width: 30%;
+  height: auto;
 }
 
 .about-land div div h3 {
@@ -338,17 +347,120 @@ justify-content: space-between;
 .about-land div div ul {
   margin-bottom: 3rem!;
   padding-left: 0;
-    list-style: none;
+  list-style: none;
 }
 
 .about-land div div ul > li {
   position: relative;
-    padding-left: 35px;
-    margin-bottom: 15px;
-    line-height: 1.5;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
+.team {
+}
 
+.team > p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 15%;
+}
+
+.persons-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.persons-items > li {
+  flex: 1 1 30%;
+  padding: 0 1px 30px;
+  width: 34%;
+}
+
+.persons-items > li > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.persons-items > li > h3 {
+  font-size: 18px;
+  color: #000;
+}
+
+.persons-items > li > span {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+.testimon-sec {
+  background: #f1f1f1;
+}
+
+.testim-item {
+  display: block;
+  height: 343px;
+  margin: 0 auto;
+}
+
+.testim-item blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.testim-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.testim-item h5 {
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.blog-contaioner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.blog-item {
+  flex: 1 1 20%;
+  padding: 0 1px 30px;
+  width: 40%;
+}
+
+.blog-item > img {
+  max-width: 90%;
+  height: auto;
+}
+
+.blog-item > h3 {
+  color: #000;
+  font-size: 20px;
+}
+
+.date {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.blog-item > span {
+  color: #007bff;
+}
 
 .contact-sec {
   background-image: url("img/hero_1.jpg");
