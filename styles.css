@@ -569,7 +569,6 @@ header {
   flex-wrap: wrap;
   flex: 0 0 50%;
   max-width: 45%;
-  
 }
 
 .input-item {
@@ -615,4 +614,24 @@ header {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.icons a {
+  flex: 0 0 10%;
+  max-width: 100%;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
 }
