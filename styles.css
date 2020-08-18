@@ -38,6 +38,39 @@ blockquote {
   margin: 0 0 1rem;
 }
 
+/* ANIMATIONS */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fromright {
+  from {
+    right: -550px;
+    opacity: 0;
+  }
+  to {
+    right: -18%;
+    opacity: 1;
+  }
+}
+
+@keyframes fromleft {
+  from {
+    left: -250px;
+    opacity: 0;
+  }
+  to {
+    left: 1px;
+    opacity: 1;
+  }
+}
+
 .button {
   cursor: pointer;
   outline: none;
@@ -160,13 +193,49 @@ header {
 
 .landing-sec > div {
   max-width: 100%;
+  position: absolute;
+  animation-name: fadein;
+  animation-duration: 3s;
 }
 
 .landing-sec img {
   max-width: 100%;
   position: absolute;
   top: 0;
-  right: -19%;
+  right: -18%;
+  animation-name: fromright;
+  animation-duration: 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fromright {
+  from {
+    right: -550px;
+    opacity: 0;
+  }
+  to {
+    right: -18%;
+    opacity: 1;
+  }
+}
+
+@keyframes fromleft {
+  from {
+    left: -250px;
+    opacity: 0;
+  }
+  to {
+    left: 1px;
+    opacity: 1;
+  }
 }
 
 .landing-sec p {
@@ -198,6 +267,8 @@ header {
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .first-item p {
@@ -289,9 +360,13 @@ header {
   text-align: left;
 }
 
-.feedback-item img {
+.feedback-item > img {
   max-width: 140%;
   height: auto;
+  left: 1px;
+  position: relative;
+  animation-name: fromleft;
+  animation-duration: 2s;
 }
 
 .feedback-item p {
@@ -307,6 +382,8 @@ header {
   padding: 20px;
   border: 1px solid #eee;
   border-left: 10px solid #4285f4;
+  animation-name: fadein;
+  animation-duration: 3s;
 }
 
 .quote div {
@@ -352,6 +429,8 @@ header {
 .about-item {
   text-align: left;
   max-width: 50%;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .about-item div p {
@@ -361,6 +440,10 @@ header {
 .about-img img {
   max-width: 80%;
   height: auto;
+  left: 1px;
+  position: relative;
+  animation-name: fromleft;
+  animation-duration: 2s;
 }
 
 .about-land div div h3 {
@@ -394,6 +477,8 @@ header {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .persons-items {
@@ -438,6 +523,8 @@ header {
 
 .testimon-sec {
   background: #f1f1f1;
+  animation-name: fadein;
+  animation-duration: 3s;
 }
 
 .testim-item {
@@ -474,6 +561,8 @@ header {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .blog-container {
@@ -523,6 +612,8 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .contact-sec:before {
@@ -549,6 +640,8 @@ header {
   margin: auto;
   padding: 5rem;
   background-color: #fff;
+  animation-name: fadein;
+  animation-duration: 4s;
 }
 
 .contact-form h3 {
