@@ -335,26 +335,31 @@ header {
 
 /* ABOUT SECTION */
 
+.about-sec > h2 {
+  background: #f1f1f1;
+  margin-bottom: auto;
+}
+
 .about-land {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #f1f1f1;
-  padding: 2.5em 0;
+  padding: 8%;
   width: 100%;
 }
 
 .about-item {
+  text-align: left;
   max-width: 50%;
-  flex: 1 0 0;
 }
 
-.about-img {
-  flex: 2 0 0;
+.about-item div p {
+  padding-right: 30%;
 }
 
 .about-img img {
-  max-width: 30%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -364,7 +369,7 @@ header {
 }
 
 .about-land div div ul {
-  margin-bottom: 3rem!;
+  margin-bottom: 3rem;
   padding-left: 0;
   list-style: none;
 }
@@ -383,6 +388,14 @@ header {
   margin-bottom: 15%;
 }
 
+.persons-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .persons-items {
   display: flex;
   flex-wrap: wrap;
@@ -391,17 +404,26 @@ header {
 }
 
 .persons-items > li {
-  flex: 1 1 30%;
-  padding: 0 1px 30px;
+  flex: 0 0 30%;
   width: 34%;
+  padding: 3px;
+  margin-bottom: 30px;
+  opacity: 1;
+  transform: translate(0);
+  transition-delay: 0.1s;
 }
 
 .persons-items > li > img {
-  max-width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: 85%;
   height: auto;
 }
 
 .persons-items > li > h3 {
+  font-weight: 500;
   font-size: 18px;
   color: #000;
 }
