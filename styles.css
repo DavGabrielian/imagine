@@ -472,8 +472,6 @@ header {
 
 .blog-sec {
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -513,13 +511,108 @@ header {
 
 .contact-sec {
   background-image: url("img/hero_1.jpg");
-  background: linear-gradient(
-    to right,
-    rgba(67, 135, 244, 0.7) 0%,
-    rgb(66, 226, 244, 0.7) 100%
-  );
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 2.5em 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-sec:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+}
+
+.contact-sec h2 {
+  position: relative;
+  color: white;
 }
 
 .contact-form {
-  background-color: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  padding: 5rem;
+  background-color: #fff;
+}
+
+.contact-form h3 {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.first-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.first-input div {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+  max-width: 45%;
+  
+}
+
+.input-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 1rem;
+}
+
+.input-item label {
+  color: #000;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.input-item .input {
+  height: 43px;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+.input-item textarea {
+  height: 10rem;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
 }
