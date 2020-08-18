@@ -143,6 +143,8 @@ header {
 
 /* the navbar hell ends  */
 
+/* LANDING PAGE SECTION */
+
 .landing-sec {
   position: relative;
   padding: 10rem;
@@ -179,6 +181,8 @@ header {
   font-weight: 900;
   color: #000;
 }
+
+/* FEATURES SECTION */
 
 .features-sec {
   width: 100%;
@@ -263,12 +267,10 @@ header {
   text-decoration: none;
 }
 
-.feedback-sec {
-  max-width: 960px;
-}
+/* FEEDBACK SECTION */
 
 .feedback-block {
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -276,14 +278,19 @@ header {
 }
 
 .feedback-item {
-  flex: 1 1 40%;
+  padding: 8%;
+  flex: 1 1 30%;
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
 }
 
+.feedback-item h2 {
+  text-align: left;
+}
+
 .feedback-item img {
-  max-width: 80%;
+  max-width: 140%;
   height: auto;
 }
 
@@ -325,6 +332,8 @@ header {
   left: 12%;
   color: #000;
 }
+
+/* ABOUT SECTION */
 
 .about-land {
   display: flex;
