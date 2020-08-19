@@ -71,6 +71,17 @@ blockquote {
   }
 }
 
+@keyframes frombottom {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 4rem;
+    opacity: 1;
+  }
+}
+
 .button {
   cursor: pointer;
   outline: none;
@@ -498,13 +509,47 @@ header {
   transition-delay: 0.1s;
 }
 
-.persons-items > li > img {
+.figure {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 85%;
+  height: auto;
+}
+
+.figure img {
   position: relative;
   text-align: center;
   overflow: hidden;
   margin-bottom: 20px;
-  max-width: 85%;
+  max-width: 100%;
   height: auto;
+}
+
+.social {
+  display: none;
+  z-index: 2;
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 4rem;
+  text-align: center;
+  transform: translateY(100%);
+  background: #4285f4;
+}
+
+.social a {
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.figure:hover .social {
+  display: block;
+  animation-name: frombottom;
+  animation-duration: 1s;
 }
 
 .persons-items > li > h3 {
