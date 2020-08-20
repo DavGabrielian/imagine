@@ -137,29 +137,27 @@ header {
   padding: 10px;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  background-color: white;
-}
 
-.navbar > ul > li {
+.navbar > a {
   float: left;
   position: relative;
 }
 
-.navbar ul li {
+.navbar a, div nav a {
   text-decoration: none;
   padding: 15px 20px;
   display: block;
   background-color: white;
+  transition: .4s all ease;
+  color: #000;
 }
 
-.navbar ul li:hover {
+.navbar > a:hover, 
+.navbar > div:hover {
   color: #4285f4;
 }
 
-.navbar ul ul {
+.navbar nav {
   font-size: 15px;
   position: absolute;
   padding: 0;
@@ -169,20 +167,10 @@ header {
   left: 0;
 }
 
-.navbar ul li:hover > ul {
+.navbar div:hover nav {
   display: block;
   color: #4285f4;
   transform: translateX(+25%);
-}
-
-.navbar ul ul li {
-  position: relative;
-  background-color: white;
-}
-
-.navbar ul ul ul {
-  top: 0;
-  left: 100%;
 }
 
 /* the navbar hell ends  */
@@ -310,12 +298,24 @@ header {
   transition: 0.3s all ease;
   transform: translate(0);
   transition-duration: 0.8s;
+  cursor: pointer;
 }
 
 .block-items div:hover {
   background: #4285f4;
   color: white;
 }
+
+.block-items div a {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+.block-items div:hover a {
+  color: white;
+}
+
+
 
 .block-items > div > div {
   left: 35px;

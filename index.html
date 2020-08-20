@@ -14,28 +14,21 @@
     <header>
         <h1 class="name">imagine.</h1>
         <nav class="navbar">
-            <ul>
-                <li href='/' class="navbar-item">Home</li>
-                <li href='#features' class="navbar-item">Features</li>
-                <li class="navbar-item">
+                <a href='/' class="navbar-item">Home</a>
+                <a href="#features" class="navbar-item">Features</a>
+                <div class="navbar-item">
                     About Us
-                    <ul>
-                        <li>More Free Templates</li>
-                        <li>Our Team</li>
-                        <li>
+                    <nav>
+                        <a >More Free Templates</a>
+                        <a href="#team">Our Team</a>
+                        <a>
                             More Links
-                            <ul>
-                                <li>Menu One</li>
-                                <li>Menu Two</li>
-                                <li>Menu Three</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar-item">Testimonials</li>
-                <li class="navbar-item">Blog</li>
-                <li class="navbar-item">Contact</li>
-            </ul>
+                        </a>
+                    </nav>
+                </div>
+                <a href="#testim" class="navbar-item">Testimonials</a>
+                <a href="#blog" class="navbar-item">Blog</a>
+                <a href="#contact" class="navbar-item">Contact</a>
         </nav>
     </header>
 
@@ -78,11 +71,10 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
+   
                 <a href="#">
                     Learn More
                 </a>
-            </p>
         </div>
         <div>
             <div>
@@ -98,11 +90,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
                 <a href="#">
                 Learn More
                 </a>
-            </p>
         </div>
         <div>
             <div>
@@ -117,11 +107,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
                 <a href="#">
                 Learn More
                 </a>
-            </p>
         </div>
         <div >
             <div>
@@ -137,11 +125,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
                 <a href="#">
                 Learn More
                 </a>
-            </p>
         </div>
         <div>
             <div>
@@ -157,11 +143,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
                 <a href="#">
                 Learn More
                 </a>
-            </p>
         </div>
         <div>
             <div>
@@ -177,11 +161,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Perferendis quis molestiae vitae eligendi at.
             </p>
-            <p>
                 <a href="#">
                 Learn More
                 </a>
-            </p>
         </div>
     </div>
     </section>
@@ -276,7 +258,7 @@
             </div>
 
         </div>
-        <div class="team">
+        <div class="team" id='team'>
             <h2>Our Team</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Fuga quos quaerat sapiente nam, id vero.</p>
             <div class="persons-container">
@@ -419,7 +401,7 @@
             </div>
         </div>
     </section>
-    <section class="testimon-sec">
+    <section class="testimon-sec" id="testim">
         <h2>Testimonials </h2>
         <div class="testim-item">
         <img src="img/person_3.jpg" alt="Profile Picture">
@@ -457,7 +439,7 @@
         </div> -->
         
     </section>
-    <section class="blog-sec">
+    <section class="blog-sec" id="blog">
         <h2>Blog Posts</h2>
         <div class="blog-container">
             <div class="blog-item">
