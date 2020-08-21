@@ -12,23 +12,24 @@
 
 <body>
     <header>
-        <h1 class="name">imagine.</h1>
-        <nav class="navbar">
-                <a href='/' class="navbar-item">Home</a>
-                <a href="#features" class="navbar-item">Features</a>
-                <div class="navbar-item">
+        <h1 href='#' class="name">imagine.</h1>
+        <h1 onclick="openNav()" id="menu" class="menu">menu</h1>
+        <nav id='navbar' class="navbar">
+                <a onclick="closeNav()" href='/' class="navbar-item">Home</a>
+                <a onclick="closeNav()" href="#features" class="navbar-item">Features</a>
+                <div onclick="closeNav()" class="navbar-item">
                     About Us
                     <nav>
                         <a >More Free Templates</a>
-                        <a href="#team">Our Team</a>
+                        <a onclick="closeNav()" href="#team">Our Team</a>
                         <a>
                             More Links
                         </a>
                     </nav>
                 </div>
-                <a href="#testim" class="navbar-item">Testimonials</a>
-                <a href="#blog" class="navbar-item">Blog</a>
-                <a href="#contact" class="navbar-item">Contact</a>
+                <a onclick="closeNav()" href="#testim" class="navbar-item">Testimonials</a>
+                <a onclick="closeNav()" href="#blog" class="navbar-item">Blog</a>
+                <a onclick="closeNav()" href="#contact" class="navbar-item">Contact</a>
         </nav>
     </header>
 
@@ -526,6 +527,7 @@
 
     </footer>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

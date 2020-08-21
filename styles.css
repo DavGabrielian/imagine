@@ -3,6 +3,7 @@ body {
   margin-right: 0;
   margin-left: 0;
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -120,10 +121,42 @@ header {
   padding: 7.5px 10px 7.5px 0;
 }
 
+.menu {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    font-size: 20px;
+    align-self: center;
+    text-align: right;
+  }
+
+  .navbar-item {
+    position: relative;
+    width: auto;
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
 }
 
 .navbar-item {
@@ -137,22 +170,22 @@ header {
   padding: 10px;
 }
 
-
 .navbar > a {
   float: left;
   position: relative;
 }
 
-.navbar a, div nav a {
+.navbar a,
+div nav a {
   text-decoration: none;
   padding: 15px 20px;
   display: block;
   background-color: white;
-  transition: .4s all ease;
+  transition: 0.4s all ease;
   color: #000;
 }
 
-.navbar > a:hover, 
+.navbar > a:hover,
 .navbar > div:hover {
   color: #4285f4;
 }
@@ -314,8 +347,6 @@ header {
 .block-items div:hover a {
   color: white;
 }
-
-
 
 .block-items > div > div {
   left: 35px;
@@ -570,6 +601,7 @@ header {
   background: #f1f1f1;
   animation-name: fadein;
   animation-duration: 3s;
+  
 }
 
 .testim-item {
@@ -578,6 +610,7 @@ header {
   height: 343px;
   margin: 0 auto;
   max-width: 60%;
+  padding-bottom: 20%;
 }
 
 .testim-item blockquote {
@@ -606,6 +639,7 @@ header {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20%;
   animation-name: fadein;
   animation-duration: 2s;
 }
