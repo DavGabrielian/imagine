@@ -1,141 +1,42 @@
-html,
-body {
-  margin-right: 0;
-  margin-left: 0;
-  font-family: "Nunito", sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: gray;
-  overflow-x: hidden;
-}
-
 section {
-  padding-top: 2.5em;
+  padding-top: 2em;
   padding-right: 0px;
-  padding-bottom: 2.5em;
+  padding-bottom: 2em;
   padding-left: 0px;
 }
 
 h1 {
   font-weight: 400;
-  width: 30%;
+  width: 20%;
 }
 
 h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #000;
-}
-
-li {
-  list-style: none;
-}
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-/* ANIMATIONS */
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fromright {
-  from {
-    right: -550px;
-    opacity: 0;
-  }
-  to {
-    right: -18%;
-    opacity: 1;
-  }
-}
-
-@keyframes fromleft {
-  from {
-    left: -250px;
-    opacity: 0;
-  }
-  to {
-    left: 1px;
-    opacity: 1;
-  }
-}
-
-@keyframes frombottom {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 4rem;
-    opacity: 1;
-  }
-}
-
-.button {
-  cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  border-radius: 30px;
-  padding: 10px 30px;
-  margin-top: 3%;
-  border-width: 2px;
-  background: #4285f4;
-  border-color: #4285f4;
-  color: #fff;
-  position: relative;
-  top: 0;
-  transition: 0.3s all ease;
-  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
-}
-
-/* the navbar */
-
-header {
-  left: 0;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 10%;
-  box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.name {
-  color: #000;
-  padding: 7.5px 10px 7.5px 0;
-}
-
-.menu {
-  display: none;
 }
 
 .navbar {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+}
+
+.menu {
+  display: block;
+  font-size: 20px;
+  align-self: center;
+  text-align: right;
 }
 
 .navbar-item {
   position: relative;
   width: auto;
-  font-size: 16px;
+  font-size: 30px;
   font-family: "Nunito", sans-serif;
   color: black;
   background-color: white;
@@ -143,52 +44,12 @@ header {
   padding: 10px;
 }
 
-.navbar > a {
-  float: left;
-  position: relative;
-}
-
-.navbar a,
-div nav a {
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-  background-color: white;
-  transition: 0.4s all ease;
-  color: #000;
-}
-
-.navbar > a:hover,
-.navbar > div:hover {
-  color: #4285f4;
-}
-
-.navbar nav {
-  font-size: 15px;
-  position: absolute;
-  padding: 0;
-  min-width: 160px;
-  display: none;
-  top: 100%;
-  left: 0;
-}
-
-.navbar div:hover nav {
-  display: block;
-  color: #4285f4;
-  transform: translateX(+25%);
-}
-
-/* the navbar hell ends  */
-
-/* LANDING PAGE SECTION */
-
 .landing-sec {
   position: relative;
   padding: 10rem;
-  max-width: 960px;
-  height: 200px;
-  margin-bottom: 20rem;
+  max-width: 260px;
+  height: 100px;
+  margin-bottom: 15rem;
 }
 
 .landing-sec div {
@@ -197,7 +58,7 @@ div nav a {
 }
 
 .landing-sec > div {
-  max-width: 100%;
+  max-width: 50%;
   position: absolute;
   animation-name: fadein;
   animation-duration: 3s;
@@ -214,30 +75,28 @@ div nav a {
 
 .landing-sec p {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
 .landing-sec h1 {
   width: 50%;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #000;
 }
 
-/* FEATURES SECTION */
-
 .features-sec {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .first-item {
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
@@ -246,7 +105,7 @@ div nav a {
 }
 
 .first-item p {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -260,29 +119,19 @@ div nav a {
 }
 
 .block-items > div {
-  flex: 1 1 25%;
-  padding: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
+  flex: 1 1 20%;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 5px;
   position: relative;
-  background: #f1f1f1;
   margin-bottom: 5rem;
   text-align: center;
+  cursor: pointer;
   transition: 0.3s all ease;
   transform: translate(0);
   transition-duration: 0.8s;
-  cursor: pointer;
-  transition-duration: 0.8s;
-}
-
-.block-items > div > p {
-  font-size: 18px;
-}
-
-.block-items div:hover {
-  background: #4285f4;
-  color: white;
+  background: #f1f1f1;
 }
 
 .block-items div a {
@@ -290,29 +139,15 @@ div nav a {
   color: #4285f4;
 }
 
-.block-items div:hover a {
-  color: white;
-}
-
-.block-items div:hover div {
-  top: -100px;
-  background-color: white;
-}
-
-.block-items div:hover div > span {
-  font-size: 3rem;
-  color: #4285f4;
-}
-
-.block-items div:hover h3 {
-  font-size: 25px;
+.block-items > div > p {
+  font-size: 13px;
 }
 
 .block-items > div > div {
-  left: 35px;
-  top: -80px;
-  width: 80px;
-  height: 80px;
+  left: 30px;
+  top: -40px;
+  width: 50px;
+  height: 50px;
   position: relative;
   border-radius: 50%;
   display: inline-block;
@@ -323,18 +158,18 @@ div nav a {
 }
 
 .block-items > div > div > span {
-  font-size: 2rem;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   color: #fff;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 0.8s;
 }
 
 .block-items > div > h3 {
   transition-duration: 0.8s;
-  font-size: 18px;
+  font-size: 15px;
   color: #000;
 }
 
@@ -343,79 +178,28 @@ div nav a {
   text-decoration: none;
 }
 
-/* FEEDBACK SECTION */
-
-.feedback-block {
-  margin-bottom: 7rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
+.block-items div:hover {
+  background: #4285f4;
+  color: white;
 }
 
-.feedback-item {
-  padding: 8%;
-  flex: 1 1 30%;
-  opacity: 1;
-  transform: translate(0);
-  transition-duration: 0.8s;
+.block-items div:hover a {
+  color: white;
 }
 
-.feedback-item h2 {
-  text-align: left;
+.block-items div:hover div {
+  top: -50px;
+  background-color: white;
 }
 
-.feedback-item > img {
-  max-width: 140%;
-  height: auto;
-  left: 1px;
-  position: relative;
-  animation-name: fromleft;
-  animation-duration: 2s;
+.block-items div:hover div > span {
+  font-size: 1rem;
+  color: #4285f4;
 }
 
-.feedback-item p {
-  margin-bottom: 1.5rem;
+.block-items div:hover h3 {
+  font-size: 20px;
 }
-
-.quote {
-  opacity: 1;
-  transform: translate(0);
-  transition-duration: 0.8s;
-  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid #eee;
-  border-left: 10px solid #4285f4;
-  animation-name: fadein;
-  animation-duration: 3s;
-}
-
-.quote div {
-  margin-bottom: 1.5rem;
-  display: flex;
-  position: relative;
-}
-
-.quote div img {
-  margin-right: 1rem;
-  max-width: 40px;
-  max-height: 40px;
-  border-radius: 50%;
-}
-
-.quote div strong {
-  font-weight: 700;
-  color: #000;
-}
-.quote div p {
-  padding-top: 10px;
-  position: absolute;
-  left: 55px;
-  color: #000;
-}
-
-/* ABOUT SECTION */
 
 .about-sec > h2 {
   background: #f1f1f1;
@@ -440,10 +224,11 @@ div nav a {
 
 .about-item div p {
   padding-right: 30%;
+  font-size: 0.9rem;
 }
 
 .about-img img {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   left: 1px;
   position: relative;
@@ -453,7 +238,7 @@ div nav a {
 
 .about-land div div h3 {
   color: #000;
-  font-size: 1.75rem;
+  font-size: 20px;
 }
 
 .about-land div div ul {
@@ -467,11 +252,12 @@ div nav a {
   padding-left: 35px;
   margin-bottom: 15px;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .team > p {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 300;
   margin-bottom: 15%;
 }
@@ -495,7 +281,7 @@ div nav a {
 
 .persons-items > li {
   flex: 0 0 30%;
-  width: 34%;
+  width: 30%;
   padding: 3px;
   margin-bottom: 30px;
   opacity: 1;
@@ -548,16 +334,20 @@ div nav a {
 
 .persons-items > li > h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   color: #000;
 }
 
 .persons-items > li > span {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   color: #4285f4;
+}
+
+.persons-items > li > p {
+  font-size: 0.9rem;
 }
 
 .testimon-sec {
@@ -569,14 +359,14 @@ div nav a {
 .testim-item {
   text-align: center;
   display: block;
-  height: 343px;
+  height: auto;
   margin: 0 auto;
   max-width: 60%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
 }
 
 .testim-item blockquote {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
@@ -585,7 +375,7 @@ div nav a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  max-width: 100px;
+  max-width: 80px;
   text-align: center;
   border-radius: 50%;
   align-self: center;
@@ -594,7 +384,7 @@ div nav a {
 .testim-item h5 {
   color: #000;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .blog-sec {
@@ -626,17 +416,22 @@ div nav a {
 
 .blog-item > h3 {
   color: #000;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .date {
   color: #b3b3b3;
+  font-size: 11px;
+}
+
+.blog-item > p:nth-child(4) {
   font-size: 14px;
 }
 
 .blog-item > span {
   color: #007bff;
+  font-size: 14px;
 }
 
 .contact-sec {
@@ -679,7 +474,9 @@ div nav a {
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-  padding: 5rem;
+  padding: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   background-color: #fff;
   animation-name: fadein;
   animation-duration: 4s;
@@ -687,7 +484,7 @@ div nav a {
 
 .contact-form h3 {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
   font-weight: 500;
 }
@@ -695,14 +492,15 @@ div nav a {
 .first-input {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .first-input div {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 50%;
-  max-width: 45%;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .input-item {
@@ -748,24 +546,4 @@ div nav a {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-}
-
-footer {
-  text-align: center;
-  padding: 3rem;
-}
-
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-
-.icons a {
-  flex: 0 0 10%;
-  max-width: 100%;
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
 }
