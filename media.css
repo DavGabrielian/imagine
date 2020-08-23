@@ -18,11 +18,27 @@ h2 {
   color: #000;
 }
 
+.button {
+  cursor: pointer;
+  outline: none;
+  font-size: 13px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 3%;
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  position: relative;
+  top: 0;
+  transition: 0.3s all ease;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
+
 .navbar {
   display: none;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: baseline;
   width: 100%;
 }
 
@@ -30,7 +46,8 @@ h2 {
   display: block;
   font-size: 20px;
   align-self: center;
-  text-align: right;
+  position: absolute;
+  right: 80px;
 }
 
 .navbar-item {
@@ -46,7 +63,8 @@ h2 {
 
 .landing-sec {
   position: relative;
-  padding: 10rem;
+  padding: 7rem;
+  padding-left: 2rem;
   max-width: 260px;
   height: 100px;
   margin-bottom: 15rem;
@@ -58,16 +76,16 @@ h2 {
 }
 
 .landing-sec > div {
-  max-width: 50%;
+  max-width: 80%;
   position: absolute;
   animation-name: fadein;
   animation-duration: 3s;
 }
 
 .landing-sec img {
-  max-width: 100%;
+  max-width: 80%;
   position: absolute;
-  top: 0;
+  top: 90px;
   right: -18%;
   animation-name: fromright;
   animation-duration: 2s;
@@ -80,7 +98,7 @@ h2 {
 }
 
 .landing-sec h1 {
-  width: 50%;
+  width: 80%;
   font-size: 2.5rem;
   font-weight: 900;
   color: #000;
@@ -114,12 +132,12 @@ h2 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .block-items > div {
-  flex: 1 1 20%;
+  flex: 1 1 38%;
   padding: 20px;
   margin-right: 10px;
   margin-left: 10px;
@@ -217,7 +235,7 @@ h2 {
 
 .about-item {
   text-align: left;
-  max-width: 50%;
+  max-width: 100%;
   animation-name: fadein;
   animation-duration: 2s;
 }
@@ -228,7 +246,7 @@ h2 {
 }
 
 .about-img img {
-  max-width: 60%;
+  max-width: 90%;
   height: auto;
   left: 1px;
   position: relative;
@@ -264,8 +282,8 @@ h2 {
 
 .persons-container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1px;
+  padding-left: 1px;
   margin-right: auto;
   margin-left: auto;
   animation-name: fadein;
@@ -280,8 +298,8 @@ h2 {
 }
 
 .persons-items > li {
-  flex: 0 0 30%;
-  width: 30%;
+  flex: 1 1 50%;
+  width: 40%;
   padding: 3px;
   margin-bottom: 30px;
   opacity: 1;
@@ -334,7 +352,7 @@ h2 {
 
 .persons-items > li > h3 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -348,6 +366,7 @@ h2 {
 
 .persons-items > li > p {
   font-size: 0.9rem;
+  width: 90%;
 }
 
 .testimon-sec {
@@ -404,8 +423,8 @@ h2 {
 }
 
 .blog-item {
-  flex: 0 0 25%;
-  width: 35%;
+  flex: 0 0 60%;
+  width: 60%;
   padding: 20px;
 }
 
@@ -475,8 +494,6 @@ h2 {
   flex-direction: column;
   margin: auto;
   padding: 3rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
   background-color: #fff;
   animation-name: fadein;
   animation-duration: 4s;
