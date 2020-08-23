@@ -1,5 +1,5 @@
 html {
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -11,10 +11,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10% 2%;
+  padding: 0 2%;
   box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  padding-bottom: 5rem;
 }
 
 section {
@@ -30,7 +29,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 900;
   margin-bottom: 20px;
   color: #000;
@@ -39,7 +38,7 @@ h2 {
 .button {
   cursor: pointer;
   outline: none;
-  font-size: 13px;
+  font-size: 20px;
   border-radius: 30px;
   padding: 10px 30px;
   margin-top: 3%;
@@ -48,7 +47,6 @@ h2 {
   border-color: #4285f4;
   color: #fff;
   position: relative;
-  top: 0;
   transition: 0.3s all ease;
   box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
 }
@@ -56,9 +54,11 @@ h2 {
 .navbar {
   display: none;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  min-width: 2vh;
+  min-height: 2vh;
 }
+
 
 .navbar:first-child::after {
   display: none;
@@ -74,7 +74,7 @@ h2 {
   font-size: 20px;
   align-self: center;
   position: absolute;
-  right: 0.1rem;
+  right: -7rem;
 }
 
 .closeMenu {
@@ -82,19 +82,19 @@ h2 {
   font-size: 20px;
   align-self: center;
   position: absolute;
-  right: 0.1rem;
-  top: 55px;
+  right: -7rem;
+  top: 20px;
 }
 
 .navbar-item {
   position: relative;
   width: auto;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "Nunito", sans-serif;
   color: black;
   background-color: white;
-  cursor: pointer;
   padding: 10px;
+  cursor: pointer;
 }
 
 .landing-sec {
@@ -111,17 +111,17 @@ h2 {
 }
 
 .landing-sec > div {
-  max-width: 80%;
+  max-width: 90%;
   position: absolute;
   animation-name: fadein;
   animation-duration: 3s;
 }
 
 .landing-sec img {
-  max-width: 70%;
+  max-width: 170%;
   position: absolute;
-  top: 14rem;
-  right: 1%;
+  top: 8rem;
+  right: -140%;
   animation-name: fromright;
   animation-duration: 2s;
 }
@@ -132,20 +132,20 @@ h2 {
     opacity: 0;
   }
   to {
-    right: 1%;
+    right: -140%;
     opacity: 1;
   }
 }
 
 .landing-sec p {
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
 .landing-sec h1 {
-  width: 80%;
-  font-size: 2.5rem;
+  width: 100%;
+  font-size: 2.7rem;
   font-weight: 900;
   color: #000;
 }
@@ -167,7 +167,7 @@ h2 {
 }
 
 .first-item p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
   padding-right: 30px;
@@ -205,14 +205,14 @@ h2 {
 }
 
 .block-items > div > p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .block-items > div > div {
   left: 30px;
   top: -40px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   position: relative;
   border-radius: 50%;
   display: inline-block;
@@ -223,7 +223,7 @@ h2 {
 }
 
 .block-items > div > div > span {
-  font-size: 1rem;
+  font-size: 1.8rem;
   position: absolute;
   top: 50%;
   color: #fff;
@@ -234,7 +234,7 @@ h2 {
 
 .block-items > div > h3 {
   transition-duration: 0.8s;
-  font-size: 15px;
+  font-size: 20px;
   color: #000;
 }
 
@@ -287,7 +287,7 @@ h2 {
 }
 
 .feedback-item > img {
-  max-width: 90%;
+  max-width: 130%;
   height: auto;
   left: 1px;
   position: relative;
@@ -296,7 +296,7 @@ h2 {
 }
 
 .feedback-item p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .quote {
@@ -305,7 +305,7 @@ h2 {
   transition-duration: 0.8s;
   box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #eee;
   border-left: 10px solid #4285f4;
   animation-name: fadein;
@@ -320,8 +320,8 @@ h2 {
 
 .quote div img {
   margin-right: 1rem;
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 55px;
+  max-height: 55px;
   border-radius: 50%;
 }
 
@@ -329,10 +329,11 @@ h2 {
   font-weight: 700;
   color: #000;
 }
+
 .quote div p {
   padding-top: 10px;
   position: absolute;
-  left: 55px;
+  left: 65px;
   color: #000;
 }
 
@@ -342,7 +343,7 @@ h2 {
 
 .about-land {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   background-color: #f1f1f1;
   width: 100%;
@@ -352,18 +353,18 @@ h2 {
 
 .about-item {
   text-align: left;
-  max-width: 100%;
+  max-width: 60%;
   animation-name: fadein;
   animation-duration: 2s;
 }
 
 .about-item div p {
   padding-right: 30%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .about-land img {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
   left: 1px;
   position: relative;
@@ -384,7 +385,7 @@ h2 {
 
 .about-land div div ul > li {
   position: relative;
-  padding-left: 35px;
+  padding-left: 0;
   margin-bottom: 15px;
   line-height: 1.5;
   font-size: 0.9rem;
@@ -392,15 +393,13 @@ h2 {
 
 .team > p {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 15%;
 }
 
 .persons-container {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   animation-name: fadein;
   animation-duration: 2s;
 }
@@ -413,8 +412,7 @@ h2 {
 }
 
 .persons-items > li {
-  flex: 1 1 55%;
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
   opacity: 1;
   transform: translate(0);
@@ -465,28 +463,27 @@ h2 {
 
 .persons-items > li > h3 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
   color: #000;
 }
 
 .persons-items > li > span {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: #4285f4;
 }
 
 .persons-items > li > p {
   font-size: 0.9rem;
-  width: 90%;
+  width: 80%;
 }
 
 .testimon-sec {
   background: #f1f1f1;
   animation-name: fadein;
   animation-duration: 3s;
-  padding: 30px 1px 30px 20px;
 }
 
 .testim-item {
@@ -494,13 +491,14 @@ h2 {
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 85%;
   padding-bottom: 5%;
 }
 
 .testim-item blockquote {
   font-size: 1rem;
   font-style: italic;
+  width: 100%;
 }
 
 .testim-item img {
@@ -508,7 +506,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  max-width: 80px;
+  max-width: 90px;
   text-align: center;
   border-radius: 50%;
   align-self: center;
@@ -517,13 +515,11 @@ h2 {
 .testim-item h5 {
   color: #000;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .blog-sec {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 5%;
   animation-name: fadein;
   animation-duration: 2s;
@@ -532,12 +528,11 @@ h2 {
 .blog-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blog-item {
-  flex: 0 0 60%;
   width: 60%;
   padding: 20px;
 }
@@ -549,22 +544,22 @@ h2 {
 
 .blog-item > h3 {
   color: #000;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .date {
   color: #b3b3b3;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .blog-item > p:nth-child(4) {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .blog-item > span {
   color: #007bff;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .contact-sec {
@@ -607,7 +602,7 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-  padding: 3rem;
+  padding: 8rem;
   background-color: #fff;
   animation-name: fadein;
   animation-duration: 4s;
@@ -615,7 +610,7 @@ h2 {
 
 .contact-form h3 {
   color: #000;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
   font-weight: 500;
 }
@@ -638,8 +633,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 1rem;
 }
 
@@ -655,7 +648,7 @@ h2 {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -670,7 +663,7 @@ h2 {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;

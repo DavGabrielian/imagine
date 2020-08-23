@@ -1,92 +1,44 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: gray;
+html {
   overflow-x: hidden;
 }
 
+header {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 section {
-  padding-top: 2.5em;
-  padding-right: 0px;
-  padding-bottom: 2.5em;
-  padding-left: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-left: 0;
 }
 
 h1 {
   font-weight: 400;
-  width: 30%;
 }
 
 h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #000;
-}
-
-li {
-  list-style: none;
-}
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-/* ANIMATIONS */
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fromright {
-  from {
-    right: -550px;
-    opacity: 0;
-  }
-  to {
-    right: -18%;
-    opacity: 1;
-  }
-}
-
-@keyframes fromleft {
-  from {
-    left: -250px;
-    opacity: 0;
-  }
-  to {
-    left: 1px;
-    opacity: 1;
-  }
-}
-
-@keyframes frombottom {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 4rem;
-    opacity: 1;
-  }
 }
 
 .button {
   cursor: pointer;
   outline: none;
-  font-size: 16px;
+  font-size: 13px;
   border-radius: 30px;
   padding: 10px 30px;
   margin-top: 3%;
@@ -100,46 +52,44 @@ blockquote {
   box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
 }
 
-/* the navbar */
-
-header {
-  left: 0;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  display: flex;
+.navbar {
+  display: none;
   flex-wrap: wrap;
-  justify-content: space-around;
-  box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar:first-child::after {
+  display: none;
 }
 
 .name {
   color: #000;
-  padding: 7.5px 10px 7.5px 0;
+  padding: 0;
 }
 
 .menu {
-  display: none;
+  display: block;
+  font-size: 20px;
+  align-self: center;
+  position: absolute;
+  right: 0.1rem;
 }
 
 .closeMenu {
   display: none;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  font-size: 20px;
+  align-self: center;
+  position: absolute;
+  right: 0.1rem;
+  top: 20px;
 }
 
 .navbar-item {
   position: relative;
   width: auto;
-  font-size: 16px;
+  font-size: 30px;
   font-family: "Nunito", sans-serif;
   color: black;
   background-color: white;
@@ -147,52 +97,12 @@ header {
   padding: 10px;
 }
 
-.navbar > a {
-  float: left;
-  position: relative;
-}
-
-.navbar a,
-div nav a {
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-  background-color: white;
-  transition: 0.4s all ease;
-  color: #000;
-}
-
-.navbar > a:hover,
-.navbar > div:hover {
-  color: #4285f4;
-}
-
-.navbar nav {
-  font-size: 15px;
-  position: absolute;
-  padding: 0;
-  min-width: 160px;
-  display: none;
-  top: 100%;
-  left: 0;
-}
-
-.navbar div:hover nav {
-  display: block;
-  color: #4285f4;
-  transform: translateX(+25%);
-}
-
-/* the navbar hell ends  */
-
-/* LANDING PAGE SECTION */
-
 .landing-sec {
   position: relative;
-  padding: 10rem;
-  max-width: 960px;
-  height: 200px;
-  margin-bottom: 20rem;
+  padding: 11rem 2rem;
+  max-width: 260px;
+  height: 100px;
+  margin-bottom: 15rem;
 }
 
 .landing-sec div {
@@ -201,46 +111,54 @@ div nav a {
 }
 
 .landing-sec > div {
-  max-width: 100%;
+  max-width: 80%;
   position: absolute;
   animation-name: fadein;
   animation-duration: 3s;
 }
 
 .landing-sec img {
-  max-width: 100%;
+  max-width: 70%;
   position: absolute;
-  top: 0;
-  right: -18%;
+  top: 14rem;
+  right: 1%;
   animation-name: fromright;
   animation-duration: 2s;
 }
 
+@keyframes fromright {
+  from {
+    right: -550px;
+    opacity: 0;
+  }
+  to {
+    right: 1%;
+    opacity: 1;
+  }
+}
+
 .landing-sec p {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
 .landing-sec h1 {
-  width: 50%;
-  font-size: 3.5rem;
+  width: 80%;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #000;
 }
 
-/* FEATURES SECTION */
-
 .features-sec {
   width: 100%;
-
   margin-right: auto;
   margin-left: auto;
 }
 
 .first-item {
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
@@ -249,8 +167,11 @@ div nav a {
 }
 
 .first-item p {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 300;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .block-items {
@@ -258,34 +179,24 @@ div nav a {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .block-items > div {
-  flex: 1 1 25%;
-  padding: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
+  flex: 1 1 38%;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 5px;
   position: relative;
-  background: #f1f1f1;
   margin-bottom: 5rem;
   text-align: center;
+  cursor: pointer;
   transition: 0.3s all ease;
   transform: translate(0);
   transition-duration: 0.8s;
-  cursor: pointer;
-  transition-duration: 0.8s;
-}
-
-.block-items > div > p {
-  font-size: 18px;
-}
-
-.block-items div:hover {
-  background: #4285f4;
-  color: white;
+  background: #f1f1f1;
 }
 
 .block-items div a {
@@ -293,29 +204,15 @@ div nav a {
   color: #4285f4;
 }
 
-.block-items div:hover a {
-  color: white;
-}
-
-.block-items div:hover div {
-  top: -100px;
-  background-color: white;
-}
-
-.block-items div:hover div > span {
-  font-size: 3rem;
-  color: #4285f4;
-}
-
-.block-items div:hover h3 {
-  font-size: 25px;
+.block-items > div > p {
+  font-size: 13px;
 }
 
 .block-items > div > div {
-  left: 35px;
-  top: -80px;
-  width: 80px;
-  height: 80px;
+  left: 30px;
+  top: -40px;
+  width: 50px;
+  height: 50px;
   position: relative;
   border-radius: 50%;
   display: inline-block;
@@ -326,18 +223,18 @@ div nav a {
 }
 
 .block-items > div > div > span {
-  font-size: 2rem;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   color: #fff;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 0.8s;
 }
 
 .block-items > div > h3 {
   transition-duration: 0.8s;
-  font-size: 18px;
+  font-size: 15px;
   color: #000;
 }
 
@@ -346,10 +243,31 @@ div nav a {
   text-decoration: none;
 }
 
-/* FEEDBACK SECTION */
+.block-items div:hover {
+  background: #4285f4;
+  color: white;
+}
+
+.block-items div:hover a {
+  color: white;
+}
+
+.block-items div:hover div {
+  top: -50px;
+  background-color: white;
+}
+
+.block-items div:hover div > span {
+  font-size: 1rem;
+  color: #4285f4;
+}
+
+.block-items div:hover h3 {
+  font-size: 20px;
+}
 
 .feedback-block {
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -369,7 +287,7 @@ div nav a {
 }
 
 .feedback-item > img {
-  max-width: 140%;
+  max-width: 90%;
   height: auto;
   left: 1px;
   position: relative;
@@ -418,36 +336,34 @@ div nav a {
   color: #000;
 }
 
-/* ABOUT SECTION */
-
 .about-sec > h2 {
   margin-bottom: auto;
 }
 
 .about-land {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background: #f1f1f1;
-  padding: 30px 1px 30px 20px;
+  background-color: #f1f1f1;
   width: 100%;
+  padding: 30px 1px 30px 20px;
   margin-bottom: 5rem;
-
 }
 
 .about-item {
   text-align: left;
-  max-width: 50%;
+  max-width: 100%;
   animation-name: fadein;
   animation-duration: 2s;
 }
 
 .about-item div p {
   padding-right: 30%;
+  font-size: 0.9rem;
 }
 
 .about-land img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
   left: 1px;
   position: relative;
@@ -457,7 +373,7 @@ div nav a {
 
 .about-land div div h3 {
   color: #000;
-  font-size: 1.75rem;
+  font-size: 20px;
 }
 
 .about-land div div ul {
@@ -468,14 +384,15 @@ div nav a {
 
 .about-land div div ul > li {
   position: relative;
-  padding-left: 35px;
+  padding-left: 0;
   margin-bottom: 15px;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .team > p {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 300;
   margin-bottom: 15%;
 }
@@ -489,14 +406,12 @@ div nav a {
 .persons-items {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
 .persons-items > li {
-  flex: 0 0 30%;
-  width: 34%;
-  padding: 3px;
+  width: 100%;
   margin-bottom: 30px;
   opacity: 1;
   transform: translate(0);
@@ -506,7 +421,7 @@ div nav a {
 .figure {
   position: relative;
   text-align: center;
-  max-width: 85%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -547,16 +462,21 @@ div nav a {
 
 .persons-items > li > h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 }
 
 .persons-items > li > span {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   color: #4285f4;
+}
+
+.persons-items > li > p {
+  font-size: 0.9rem;
+  width: 80%;
 }
 
 .testimon-sec {
@@ -568,15 +488,16 @@ div nav a {
 .testim-item {
   text-align: center;
   display: block;
-  height: 343px;
+  height: auto;
   margin: 0 auto;
-  max-width: 60%;
-  padding-bottom: 8%;
+  max-width: 85%;
+  padding-bottom: 5%;
 }
 
 .testim-item blockquote {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
+  width: 100%;
 }
 
 .testim-item img {
@@ -584,7 +505,7 @@ div nav a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  max-width: 100px;
+  max-width: 80px;
   text-align: center;
   border-radius: 50%;
   align-self: center;
@@ -593,13 +514,11 @@ div nav a {
 .testim-item h5 {
   color: #000;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .blog-sec {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 5%;
   animation-name: fadein;
   animation-duration: 2s;
@@ -608,13 +527,12 @@ div nav a {
 .blog-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blog-item {
-  flex: 0 0 25%;
-  width: 35%;
+  width: 60%;
   padding: 20px;
 }
 
@@ -625,17 +543,22 @@ div nav a {
 
 .blog-item > h3 {
   color: #000;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .date {
   color: #b3b3b3;
+  font-size: 11px;
+}
+
+.blog-item > p:nth-child(4) {
   font-size: 14px;
 }
 
 .blog-item > span {
   color: #007bff;
+  font-size: 14px;
 }
 
 .contact-sec {
@@ -678,7 +601,7 @@ div nav a {
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-  padding: 5rem;
+  padding: 3rem;
   background-color: #fff;
   animation-name: fadein;
   animation-duration: 4s;
@@ -686,7 +609,7 @@ div nav a {
 
 .contact-form h3 {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
   font-weight: 500;
 }
@@ -694,14 +617,15 @@ div nav a {
 .first-input {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .first-input div {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 50%;
-  max-width: 45%;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .input-item {
@@ -747,24 +671,4 @@ div nav a {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-}
-
-footer {
-  text-align: center;
-  padding: 3rem;
-}
-
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-
-.icons a {
-  flex: 0 0 10%;
-  max-width: 100%;
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
 }
