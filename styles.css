@@ -1,7 +1,6 @@
 html,
 body {
-  margin-right: 0;
-  margin-left: 0;
+
   font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
 }
@@ -112,7 +111,7 @@ header {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
-  padding: 0 10%;
+  justify-content: space-around;
   box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -123,6 +122,10 @@ header {
 }
 
 .menu {
+  display: none;
+}
+
+.closeMenu {
   display: none;
 }
 
@@ -229,8 +232,7 @@ div nav a {
 
 .features-sec {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -418,7 +420,6 @@ div nav a {
 /* ABOUT SECTION */
 
 .about-sec > h2 {
-  background: #f1f1f1;
   margin-bottom: auto;
 }
 
@@ -427,8 +428,10 @@ div nav a {
   flex-direction: row;
   justify-content: center;
   background: #f1f1f1;
-  padding: 8%;
+  padding: 30px 1px 30px 20px;
   width: 100%;
+  margin-bottom: 5rem;
+
 }
 
 .about-item {
@@ -442,8 +445,8 @@ div nav a {
   padding-right: 30%;
 }
 
-.about-img img {
-  max-width: 80%;
+.about-land img {
+  max-width: 60%;
   height: auto;
   left: 1px;
   position: relative;
@@ -564,6 +567,7 @@ div nav a {
   background: #f1f1f1;
   animation-name: fadein;
   animation-duration: 3s;
+  padding: 30px 1px 30px 20px;
 }
 
 .testim-item {

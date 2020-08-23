@@ -1,13 +1,26 @@
+header {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10% 2%;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 section {
-  padding-top: 2em;
-  padding-right: 0px;
-  padding-bottom: 2em;
-  padding-left: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-left: 0;
 }
 
 h1 {
   font-weight: 400;
-  width: 20%;
 }
 
 h2 {
@@ -42,12 +55,30 @@ h2 {
   width: 100%;
 }
 
+.navbar:first-child::after {
+  display: none;
+}
+
+.name {
+  color: #000;
+  padding: 0;
+}
+
 .menu {
   display: block;
   font-size: 20px;
   align-self: center;
   position: absolute;
-  right: 80px;
+  right: 0.1rem;
+}
+
+.closeMenu {
+  display: none;
+  font-size: 20px;
+  align-self: center;
+  position: absolute;
+  right: 0.1rem;
+  top: 55px;
 }
 
 .navbar-item {
@@ -63,8 +94,7 @@ h2 {
 
 .landing-sec {
   position: relative;
-  padding: 7rem;
-  padding-left: 2rem;
+  padding: 11rem 2rem;
   max-width: 260px;
   height: 100px;
   margin-bottom: 15rem;
@@ -83,12 +113,23 @@ h2 {
 }
 
 .landing-sec img {
-  max-width: 80%;
+  max-width: 70%;
   position: absolute;
-  top: 90px;
-  right: -18%;
+  top: 14rem;
+  right: 1%;
   animation-name: fromright;
   animation-duration: 2s;
+}
+
+@keyframes fromright {
+  from {
+    right: -550px;
+    opacity: 0;
+  }
+  to {
+    right: 1%;
+    opacity: 1;
+  }
 }
 
 .landing-sec p {
@@ -106,15 +147,14 @@ h2 {
 
 .features-sec {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+
   margin-right: auto;
   margin-left: auto;
 }
 
 .first-item {
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   opacity: 1;
   transform: translate(0);
   transition-duration: 0.8s;
@@ -125,6 +165,9 @@ h2 {
 .first-item p {
   font-size: 0.9rem;
   font-weight: 300;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .block-items {
@@ -219,18 +262,88 @@ h2 {
   font-size: 20px;
 }
 
+.feedback-block {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.feedback-item {
+  padding: 8%;
+  flex: 1 1 30%;
+  opacity: 1;
+  transform: translate(0);
+  transition-duration: 0.8s;
+}
+
+.feedback-item h2 {
+  text-align: left;
+}
+
+.feedback-item > img {
+  max-width: 90%;
+  height: auto;
+  left: 1px;
+  position: relative;
+  animation-name: fromleft;
+  animation-duration: 2s;
+}
+
+.feedback-item p {
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  opacity: 1;
+  transform: translate(0);
+  transition-duration: 0.8s;
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+.quote div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+.quote div img {
+  margin-right: 1rem;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+}
+
+.quote div strong {
+  font-weight: 700;
+  color: #000;
+}
+.quote div p {
+  padding-top: 10px;
+  position: absolute;
+  left: 55px;
+  color: #000;
+}
+
 .about-sec > h2 {
-  background: #f1f1f1;
   margin-bottom: auto;
 }
 
 .about-land {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background: #f1f1f1;
-  padding: 8%;
+  background-color: #f1f1f1;
   width: 100%;
+  padding: 30px 1px 30px 20px;
+  margin-bottom: 5rem;
 }
 
 .about-item {
@@ -245,8 +358,8 @@ h2 {
   font-size: 0.9rem;
 }
 
-.about-img img {
-  max-width: 90%;
+.about-land img {
+  max-width: 70%;
   height: auto;
   left: 1px;
   position: relative;
@@ -282,8 +395,6 @@ h2 {
 
 .persons-container {
   width: 100%;
-  padding-right: 1px;
-  padding-left: 1px;
   margin-right: auto;
   margin-left: auto;
   animation-name: fadein;
@@ -373,6 +484,7 @@ h2 {
   background: #f1f1f1;
   animation-name: fadein;
   animation-duration: 3s;
+  padding: 30px 1px 30px 20px;
 }
 
 .testim-item {
