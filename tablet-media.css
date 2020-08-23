@@ -118,10 +118,10 @@ h2 {
 }
 
 .landing-sec img {
-  max-width: 170%;
+  max-width: 180%;
   position: absolute;
   top: 8rem;
-  right: -140%;
+  right: -160%;
   animation-name: fromright;
   animation-duration: 2s;
 }
@@ -132,7 +132,7 @@ h2 {
     opacity: 0;
   }
   to {
-    right: -140%;
+    right: -160%;
     opacity: 1;
   }
 }
