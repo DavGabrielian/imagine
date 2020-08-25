@@ -100,28 +100,24 @@ h2 {
 .landing-sec {
   position: relative;
   padding: 11rem 2rem;
-  max-width: 260px;
+  max-width: 300px;
   height: 100px;
   margin-bottom: 15rem;
 }
 
-.landing-sec div {
-  position: absolute;
-  width: 100%;
-}
-
 .landing-sec > div {
-  max-width: 80%;
+  max-width: 150%;
   position: absolute;
   animation-name: fadein;
   animation-duration: 3s;
 }
 
 .landing-sec img {
-  max-width: 70%;
+  display: flex;
+  max-width: 120%;
   position: absolute;
-  top: 14rem;
-  right: 1%;
+  top: 10rem;
+  right: -80%;
   animation-name: fromright;
   animation-duration: 2s;
 }
@@ -139,12 +135,12 @@ h2 {
 
 .landing-sec p {
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .landing-sec h1 {
-  width: 80%;
+  width: 95%;
   font-size: 2.5rem;
   font-weight: 900;
   color: #000;
@@ -407,10 +403,13 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
 }
 
 .persons-items > li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
   width: 100%;
   margin-bottom: 30px;
   opacity: 1;
@@ -418,11 +417,13 @@ h2 {
   transition-delay: 0.1s;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
 .figure {
   position: relative;
   text-align: center;
-  max-width: 80%;
-  height: auto;
 }
 
 .figure img {
@@ -430,7 +431,7 @@ h2 {
   text-align: center;
   overflow: hidden;
   margin-bottom: 20px;
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
 }
 
